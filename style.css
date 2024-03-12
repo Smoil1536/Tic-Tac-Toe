@@ -1,0 +1,41 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #324261;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#main-box
+{
+    width: 24%;
+    height: 41%;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: rgb(187, 49, 173);
+    border: 6px solid rgb(187, 49, 173);
+}
+
+.inputs
+{
+    display: flex;
+    gap: 5px;
+    border: 1px solid rgb(187, 49, 173);
+    height: 33%;
+}
+
+button
+{
+    width: 33%;
+    color: white;
+    font-size: 50px;
+    background-color: #324261;
+    border-radius: 10px;
+}
