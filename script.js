@@ -64,22 +64,15 @@ function On_start()
         Button[i].onclick = function(){
             const node = this;
             node.innerHTML = player;
+            node.disabled = true;
             
             
             // Checking and Declaring winner of the game
             winner = Winner();
             if(winner === 'X' || winner === 'O')
-            {
                 Ending_text(player); 
-                // Disabling the buttons
-                document.querySelectorAll(".buttonclass").forEach(e => e.disabled = true);
-            }
             else if(Filled())
-            {
                 Ending_text("No");
-                // Disabling the buttons
-                document.querySelectorAll(".buttonclass").forEach(e => e.disabled = true);
-            }
 
             // Changing player
             if(player === 'O')
