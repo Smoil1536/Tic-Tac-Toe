@@ -47,7 +47,7 @@ function Ending_text(str)
     const Container = document.getElementById("main-box");
     const Element = document.createElement("h1");
 
-    Element.innerHTML = str+" player won !!";
+    Element.innerHTML = str;
     Element.style.color = "white";
     Element.style.fontSize = "xx-large" ;
     Element.style.textAlign = "center";
@@ -70,9 +70,9 @@ function On_start()
             // Checking and Declaring winner of the game
             winner = Winner();
             if(winner === 'X' || winner === 'O')
-                Ending_text(player); 
+                Ending_text(player+" player won !"); 
             else if(Filled())
-                Ending_text("No");
+                Ending_text("Match Tied !");
 
             // Changing player
             if(player === 'O')
